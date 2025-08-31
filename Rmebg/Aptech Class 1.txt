@@ -1,0 +1,27 @@
+Aptech Class: Remove Background on Image
+
+Install Library:
+Open VS Code ----> Run command in Terminal one by one 
+1. pip install rembg
+2. pip install Pillow
+3. pip install onnxruntime
+
+Create folder ----> Open VS Code ----> Create File ----> index.py ----> then use code
+
+from rembg import remove
+from PIL import Image
+input_path_1 = 'image1.jpg'
+output_path_1 = 'image1_removed.png'
+input_image_1 = Image.open(input_path_1)
+output_image_1 = remove(input_image_1)
+output_image_1.save(output_path_1)
+print("Background removed for image1.jpg")
+
+
+
+
+
+
+
+
+
